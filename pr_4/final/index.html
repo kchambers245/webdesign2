@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+<style>
+/*------------SEARCH BOX--------------------*/
+
+#search1 {
+
+}
+
+#search1 input[type="text"] {
+    border: 0px;
+   	font-family:"Trade Gothic W01 Bold 2";
+	font-size: 15px;
+    width: 100%;
+   	background: #ffffff;
+	color: #000000;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    }
+
+#search2 {
+
+}
+
+#search2 input[type="text"] {
+    border: 0px;    
+    width: 100%;
+   	background: #ffffff;
+	color: #000000;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    	
+    }
+
+
+/*---------------DROP DOWN CSS---------------*/
+
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/cssplay-click-drop-fly.html
+Copyright (c) Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+/* this is a CSS answer to fix the hover tilde problem in safari and chrome and the :active/:focus with adjacent sibling selectors in IE7-9 */
+html {
+-webkit-animation: safariSelectorFix infinite 1s;
+behavior:url(click-drop-fly/trigger2.htc)
+}
+@-webkit-keyframes safariSelectorFix {
+0% {zoom:1;} 
+100% {zoom:1;}
+}
+
+#menu {
+	position:relative; 
+	z-index:500;
+	}
+#menu ul {
+	list-style:none; 
+	background:#666666;
+	}	
+#menu ul.level1 {height:0px;
+	}
+#menu ul ul {
+	position:absolute; 
+	left:-9999px;  
+	}
+#menu ul ul ul {
+	position:absolute; 
+	left:-9999px; 
+	top:-5px;
+	}
+#menu ul li {
+	color: #fff;
+	padding: 7px;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background:#666666; 
+	margin-right:5px; 
+	float:left;
+	position:relative;
+	width: 100%;
+	}
+#menu ul li a {
+	color: #fff;
+	display:block; 
+	text-decoration:none; 
+	background:#666666; 
+	-moz-box-shadow: 2px 2px 4px #888;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+	}
+#menu ul li a.fly {
+	color: #fff;
+	background:#666666 url(img/white_arrow.png) no-repeat right center; 
+
+	
+	}
+
+#menu ul ul li {margin:0;}
+#menu ul ul li a {width:105px}
+#menu ul ul li a.fly {
+	color: #fff;
+	padding-right:10px;
+	}
+
+#menu ul li:hover > a { 
+	color:#ccc;
+	
+	}
+
+#menu ul li a:focus {outline:0;}
+
+#menu ul li a:active + ul.dropdown {left: 0px;}
+#menu ul li a:focus + ul.d1,
+#menu ul li a:focus + ul.d2,
+#menu ul li a:focus + ul.d3,
+#menu ul li a:focus + ul.d4 {left: 0px;}
+
+#menu ul li ul.dropdown:hover {left: 0px;}
+
+#menu ul li a:active + ul.flyout {}
+#menu ul li a:focus + ul.f1,
+#menu ul li a:focus + ul.f2,
+#menu ul li a:focus + ul.f3,
+#menu ul li a:focus + ul.ff1 {}
+
+#menu ul li ul.flyout:hover {}
+
+
+/*------------------SECOND DROPDOWN---------------*/
+
+html {
+-webkit-animation: safariSelectorFix infinite 1s;
+behavior:url(click-drop-fly/trigger2.htc)
+}
+@-webkit-keyframes safariSelectorFix {
+0% {zoom:1;} 
+100% {zoom:1;}
+}
+
+#menu2 {
+	position:relative; 
+	z-index:600;
+	}
+#menu2 ul {
+	list-style:none; 
+	background:#FFF;
+	}	
+#menu2 ul.level1 {height:0px;
+	}
+#menu2 ul ul {
+	position:absolute; 
+	left:-9999px;  
+	}
+#menu2 ul ul ul {
+	position:absolute; 
+	left:-9999px; 
+	top:-5px;
+	}
+#menu2 ul li {
+	color: #000;
+	padding: 7px;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background:#FFF; 
+	margin-right:5px; 
+	float:left;
+	position:relative;
+	width: 100%;
+	}
+#menu2 ul li a {
+	color: #000;
+	display:block; 
+	text-decoration:none; 
+	background:#FFF; 
+	
+	}
+#menu2 ul li a.fly {
+	color: #000;
+	background:#FFF url(img/black_arrow.png) no-repeat right center; 
+	
+	}
+
+#menu2 ul ul li {
+	font-size: 13px;
+	margin:0;
+	-moz-box-shadow: 2px 2px 4px #888;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;}
+
+#menu2 ul ul li a {width:105px}
+
+#menu2 ul ul li a.fly {
+	color: #000;
+	padding-right:10px;
+	}
+
+#menu2 ul li:hover > a { 
+	color:#ccc; 
+	}
+
+#menu2 ul li a:focus {outline:0;}
+
+#menu2 ul li a:active + ul.dropdown {left: 0px;}
+#menu2 ul li a:focus + ul.d1,
+#menu2 ul li a:focus + ul.d2,
+#menu2 ul li a:focus + ul.d3,
+#menu2 ul li a:focus + ul.d4 {left: 0px;}
+
+#menu2 ul li ul.dropdown:hover {left: 0px;}
+
+#menu2 ul li a:active + ul.flyout {}
+#menu2 ul li a:focus + ul.f1,
+#menu2 ul li a:focus + ul.f2,
+#menu2 ul li a:focus + ul.f3,
+#menu2 ul li a:focus + ul.ff1 {}
+
+#menu2 ul li ul.flyout:hover {}
+
+
+/*------------------THIRD DROPDOWN---------------*/
+
+html {
+-webkit-animation: safariSelectorFix infinite 1s;
+behavior:url(click-drop-fly/trigger2.htc)
+}
+@-webkit-keyframes safariSelectorFix {
+0% {zoom:1;} 
+100% {zoom:1;}
+}
+
+#menu3 {
+	position:relative; 
+	z-index:600;
+	}
+#menu3 ul {
+	list-style:none; 
+	background:#FFF;
+	}	
+#menu3 ul.level1 {height:0px;
+	}
+#menu3 ul ul {
+	position:absolute; 
+	left:-9999px;  
+	}
+#menu3 ul ul ul {
+	position:absolute; 
+	left:-9999px; 
+	top:-5px;
+	}
+#menu3 ul li {
+	color: #000;
+	padding: 7px;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background:#FFF; 
+	margin-right:5px; 
+	float:left;
+	position:relative;
+	width: 100%;
+	}
+#menu3 ul li a {
+	color: #000;
+	display:block; 
+	text-decoration:none; 
+	background:#FFF; 
+	
+	}
+#menu3 ul li a.fly {
+	color: #000;
+	background:#FFF url(img/black_arrow.png) no-repeat right center; 
+	
+	}
+
+#menu3 ul ul li {
+	font-size: 13px;
+	margin:0;
+	width: 100%;
+	-moz-box-shadow: 2px 2px 4px #888;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;}
+
+#menu3 ul ul li a {width: 100%}
+
+#menu3 ul ul li a.fly {
+	color: #000;
+	padding-right:10px;
+	}
+
+#menu3 ul li:hover > a { 
+	color:#ccc; 
+	}
+
+#menu3 ul li a:focus {outline:0;}
+
+#menu3 ul li a:active + ul.dropdown {left: 0px;}
+#menu3 ul li a:focus + ul.d1,
+#menu3 ul li a:focus + ul.d2,
+#menu3 ul li a:focus + ul.d3,
+#menu3 ul li a:focus + ul.d4 {left: 0px;}
+
+#menu3 ul li ul.dropdown:hover {left: 0px;}
+
+#menu3 ul li a:active + ul.flyout {}
+#menu3 ul li a:focus + ul.f1,
+#menu3 ul li a:focus + ul.f2,
+#menu3 ul li a:focus + ul.f3,
+#menu3 ul li a:focus + ul.ff1 {}
+
+#menu3 ul li ul.flyout:hover {}
+
+
+/*-----------------STYLE CSS-----------------*/
+
+a:link {color:#fff;}
+			
+body{
+	font-family:"Trade Gothic W01 Roman";
+	}
+	
+footer {
+  	background-color:#666666;
+  	margin-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 55px;
+}
+
+h1{
+	font-family:"Trade Gothic W01 Light";
+	color: #666;
+	font-size: 14px;
+}
+h1.strong{
+	font-family:"Trade Gothic W01 Bold 2";
+	color: #FF6840;
+	font-size: 34px;
+	margin-top: -10px;
+	
+}
+
+h2{
+	background: #ffffff;
+	color: #000000;
+	font-size: 12px;
+	margin-top: 10px;
+
+
+}
+h2.strong{
+	font-family:"Trade Gothic W01 Bold 2";
+	font-size: 16px;
+}
+
+h3{
+	color: #ffffff;	
+	font-size: 100%;	
+}
+
+h3.strong{
+	font-family:"Trade Gothic W01 Bold 2";
+	text-align: center;
+}
+h4{
+	text-align: right;
+	margin-bottom: -20px;
+	padding-top: 20px
+}
+
+h5{	
+	font-family:"Trade Gothic W01 Bold 2";
+	font-size: 100%;
+	width: 90%;
+	padding-left: -30px;
+	height: 16%;
+	z-index: 100;
+	position: absolute;
+	bottom: 0%;
+	color: #fff;
+	text-align: center;
+	text-transform:capitalize;
+	padding-top: 5%;}
+
+h5.blue{
+	background: #0091C9;
+}
+h5.green{
+	background: #83BF25;
+}
+h5.yellow{
+	background: #FFCD40;
+}
+
+h6{
+	font-family:"Trade Gothic W01 Roman";
+}
+h6.strong{
+	font-family:"Trade Gothic W01 Bold 2";
+}
+
+		
+.parentContainer {
+    background: #000000;
+ 
+}
+
+#listcontainer ul{
+	list-style-type: none;
+}
+
+img.shadow{
+	-moz-box-shadow: 2px 2px 4px #888;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+}
+img.padding{
+
+	padding-bottom: 20px;
+}
+
+/* ------------------------------------------------------- Simple Modal ---------------------------------------------------- */
+
+#basic-modal-content {display:none;}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#ffffff;}
+
+/* Container */
+#simplemodal-container {height:80%; width:80%; color:#000; background-color:#fff; background-image: url(); border:0px solid #444; padding:12px;}
+#simplemodal-container .simplemodal-data {padding:8px;}
+#simplemodal-container a {color:#000;}
+#simplemodal-container a.modalCloseImg {background:url(img/x-2.png) no-repeat; width:21px; height:22px; display:inline; z-index:3200; position:absolute; top:-10px; right:-10px; cursor:pointer;}
+#simplemodal-container h3 {color:#000000;}
+
+
+		
+</style>
+
+<script src="js/jquery-1.7.1.min.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script>
+    $(function(){
+      
+      var $container = $('#container');
+
+      $container.isotope({
+        itemSelector : '.element'
+      });
+      
+      
+      var $optionSets = $('#options .option-set'),
+          $optionLinks = $optionSets.find('a');
+
+      $optionLinks.click(function(){
+        var $this = $(this);
+        // don't proceed if already selected
+        if ( $this.hasClass('selected') ) {
+          return false;
+        }
+        var $optionSet = $this.parents('.option-set');
+        $optionSet.find('.selected').removeClass('selected');
+        $this.addClass('selected');
+  
+        // make option object dynamically, i.e. { filter: '.my-filter-class' }
+        var options = {},
+            key = $optionSet.attr('data-option-key'),
+            value = $this.attr('data-option-value');
+        // parse 'false' as false boolean
+        value = value === 'false' ? false : value;
+        options[ key ] = value;
+        if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+          // changes in layout modes need extra logic
+          changeLayoutMode( $this, options )
+        } else {
+          // otherwise, apply new options
+          $container.isotope( options );
+        }
+        
+        return false;
+      });
+
+      
+    });
+  </script>
+  
+  <script src="js/jquery-1.7.1.min.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script>
+    $(function(){
+      
+      var $container = $('#container');
+
+      $container.isotope({
+        itemSelector : '.element'
+      });
+      
+      
+      var $optionSets = $('#options .option-set'),
+          $optionLinks = $optionSets.find('a');
+
+      $optionLinks.click(function(){
+        var $this = $(this);
+        // don't proceed if already selected
+        if ( $this.hasClass('selected') ) {
+          return false;
+        }
+        var $optionSet = $this.parents('.option-set');
+        $optionSet.find('.selected').removeClass('selected');
+        $this.addClass('selected');
+  
+        // make option object dynamically, i.e. { filter: '.my-filter-class' }
+        var options = {},
+            key = $optionSet.attr('data-option-key'),
+            value = $this.attr('data-option-value');
+        // parse 'false' as false boolean
+        value = value === 'false' ? false : value;
+        options[ key ] = value;
+        if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+          // changes in layout modes need extra logic
+          changeLayoutMode( $this, options )
+        } else {
+          // otherwise, apply new options
+          $container.isotope( options );
+        }
+        
+        return false;
+      });
+
+      
+    });
+  </script>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="jquery.customSelect.js"></script>
+<script type="text/javascript">
+$(function(){
+
+$('select.styled').customSelect();
+
+});
+</script>
+
+	<script type='text/javascript' src='js/jquery.js'></script>
+		<script type="text/javascript" src="js/jquery.simplemodal-1.4.4.js"></script>
+		<script type='text/javascript' src='js/basic.js'></script>
+	        <script type="text/javascript">
+	        	jQuery(function ($) {
+		// Load dialog on page load
+		//$('#basic-modal-content').modal();
+	
+		// Load dialog on click
+		$('#basic-modal .basic').click(function (e) {
+			$('#basic-modal-content').modal();
+	
+			return false;
+
+		});
+	});
+	        </script>
+
+
+		
+<body>
+	
+<section class="container">
+	<div class="row">
+		<div class="col-md-9 col-sm-9 col-xs-6"><h4>&nbsp;</h4></div>
+		<div class="col-md-3 col-sm-3 col-xs-6"><h4>MY ACCOUNT - MY LIST</h4></div>
+	</div>
+</section>
+			
+<section class="container">
+	<div class="row">
+		<div class="col-md-5 col-sm-5 col-xs-12"><a href="index.html"><img src="img/logo2.png" class="img-responsive padding" alt="Responsive image"></a></div>
+	</div>
+</section>
+	
+	
+	
+<div class="parentContainer">	 
+<section class="container">
+	<div class="row">
+		
+		<div class="col-md-2 col-sm-2 hidden-xs">
+			<section id="options" class="clearfix">
+		 		<ul id="filters" class="option-set clearfix" data-option-key="filter">
+					<div id="menu2">
+						<ul class="level1" id="menuTop">
+							<li><a class="fly" href="#url" tabindex="1">EVERYTHING</a>
+								<ul class="dropdown d3">
+		        <li><a href="#filter" data-option-value="*" class="selected">All</a></li>
+		        <li><a href="#filter" data-option-value=".metal">Library</a></li>
+		        <li><a href="#filter" data-option-value=".transition">Image</a></li>
+		        <li><a href="#filter" data-option-value=".post-transition">Reserves</a></li>
+		        <li><a href="#filter" data-option-value=".nonmetal">Book</a></li>
+		        <li><a href="#filter" data-option-value=".inner-transition">E-Book</a></li>
+		        <li><a href="#filter" data-option-value=".inner-transition">Video</a></li>
+		        <li><a href="#filter" data-option-value=".inner-transition">Pieriodical</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</ul>
+			</section> 	
+		</div>
+		
+		<div class="col-md-2 col-sm-2 hidden-xs">
+			<section id="options" class="clearfix">
+		 		<ul id="filters" class="option-set clearfix" data-option-key="filter">
+					<div id="menu2">
+						<ul class="level1" id="menuTop">
+							<li><a class="fly" href="#url" tabindex="1">ALL FIELDS</a>
+								<ul class="dropdown d3">
+		        <li><a href="#filter" data-option-value="*" class="selected">All</a></li>
+		        <li><a href="#filter" data-option-value=".metal">Title</a></li>
+		        <li><a href="#filter" data-option-value=".transition">Author</a></li>
+		        <li><a href="#filter" data-option-value=".post-transition">Subject</a></li>
+		        <li><a href="#filter" data-option-value=".nonmetal">ISBN</a></li>
+		        <li><a href="#filter" data-option-value=".inner-transition">Keywords</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</ul>
+			</section> 	
+		</div>
+
+		<div class="col-md-5 col-sm-5 col-xs-12">
+			<a href="search.html"><form method="get" action="search.html" id="search1">
+  			<input name="q" type="text" placeholder="SEARCH" /></a>
+  			</div>
+  
+  		<div class="col-md-3 col-sm-3 hidden-xs">
+			<section id="options" class="clearfix">
+		 		<ul id="filters" class="option-set clearfix" data-option-key="filter">
+					<div id="menu2">
+						<ul class="level1" id="menuTop">
+							<li><a class="fly" href="#url" tabindex="1">ADVANCED SEARCH</a>
+								<ul class="dropdown d3">
+		        <li>Find all options with:</li>
+		        <li><form method="get" action="#" id="search2"><input name="q" type="text" placeholder="THESE EXACT WORDS" /></li>
+		        <li><form method="get" action="#" id="search2"><input name="q" type="text" placeholder="THIS EXACT PHRASE" /></li>
+		        <li>Exclude all items with:</li>
+		        <li><form method="get" action="#" id="search2"><input name="q" type="text" placeholder="THESE EXACT WORDS" /></li>
+		        <li><form method="get" action="#" id="search2"><input name="q" type="text" placeholder="THIS EXACT PHRASE" /></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</ul>
+			</section> 	
+		</div>
+ 
+	</div>
+</section>
+</div>
+
+
+
+<section class="container">
+	<div class="row">
+		<div style="margin-top:25px">
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+		<h1>YOUR LAST SEARCHES:</h1>
+		</div>
+		<div class="col-lg-10 col-md-9 col-sm-8 col-xs-6">
+			<h1 class="strong">norse mythology</h1>
+		</div></div>
+		
+	</div>
+</section>
+
+
+<div id="listcontainer">
+<ul>
+<section class="container">
+	<div class="row">
+		<li><div class="col-md-2 col-sm-4 col-xs-6"><h5 class="blue">BOOK</h5><img src="img/norse1.png" class="img-responsive shadow" alt="Responsive image"></div>
+		<div class="col-md-2 col-sm-4 col-xs-6"><h5 class="blue">BOOK</h5><img src="img/norse2.png" class="img-responsive shadow" alt="Responsive image"></div>
+		<div class="col-md-2 col-sm-4 col-xs-6"><h5 class="blue">BOOK</h5><img src="img/norse3.png" class="img-responsive shadow" alt="Responsive image"></div>
+		<div class="col-md-2 col-sm-4 col-xs-6"><h5 class="blue">BOOK</h5><img src="img/norse4.png" class="img-responsive shadow" alt="Responsive image"></div>
+		<div class="col-md-2 col-sm-4 col-xs-6"><h5 class="green">E-BOOK</h5><img src="img/norse5.png" class="img-responsive shadow" alt="Responsive image"></div>
+		<div class="col-md-2 col-sm-4 col-xs-6"><h5 class="blue">BOOK</h5><img src="img/norse6.png" class="img-responsive shadow" alt="Responsive image"></div></li>
+	</div>
+</section>	
+</ul>
+</div>
+
+<section class="container">
+	<div class="row">
+		 <div style="margin-top:25px">
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+		<h1>&nbsp;</h1>
+		</div>
+		<div class="col-lg-10 col-md-9 col-sm-8 col-xs-6">
+			<h1 class="strong">19th century american art</h1>
+		</div>
+
+	</div>
+</section>
+
+<div id="listcontainer">
+<ul>
+<section class="container">
+	<div class="row">
+		<li><div class="col-md-2 col-sm-4 col-xs-6"><h5 class="blue">BOOK</h5><img src="img/art1.png" class="img-responsive shadow" alt="Responsive image"></div>
+		<div class="col-md-2 col-sm-4 col-xs-6"><h5 class="blue">BOOK</h5><img src="img/art2.png" class="img-responsive shadow" alt="Responsive image"></div>
+		<div class="col-md-2 col-sm-4 col-xs-6"><h5 class="blue">BOOK</h5><img src="img/art3.png" class="img-responsive shadow" alt="Responsive image"></div>
+		<div class="col-md-2 col-sm-4 col-xs-6"><h5 class="blue">BOOK</h5><img src="img/art4.png" class="img-responsive shadow" alt="Responsive image"></div>
+		<div class="col-md-2 col-sm-4 col-xs-6"><h5 class="blue">BOOK</h5><img src="img/art5.png" class="img-responsive shadow" alt="Responsive image"></div>
+		<div class="col-md-2 col-sm-4 col-xs-6"><h5 class="blue">BOOK</h5><img src="img/art6.png" class="img-responsive shadow" alt="Responsive image"></div></li>
+	</div>
+</section>	
+</ul>
+</div>   
+
+    <section class="container">
+<div class="row">      
+    <footer>
+    	<div class="col-md-4 col-sm-4 col-xs-4"><h3 class="strong">CONTACT US</h3></div>
+    	<div class="col-md-4 col-sm-4 col-xs-4"><h3 class="strong">HOURS</h3></div>
+    	<div class="col-md-4 col-sm-4 col-xs-4"><h3 class="strong">INFORMATION</h3></div>
+    </footer>
+	</div>
+</section>	
+
+		</body>
+	</head>	
+</html>
